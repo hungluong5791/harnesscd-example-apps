@@ -25,4 +25,12 @@ service:
               skipResourceVersioning: false
               enableDeclarativeRollback: false
               helmVersion: V3
+      artifacts:
+        primary:
+          primaryArtifactRef: <+input>
+          sources:
+            - identifier: app
+              spec:
+                version: test-artifact-version
+              type: CustomArtifact
   gitOpsEnabled: false
