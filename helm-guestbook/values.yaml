@@ -5,8 +5,7 @@
 replicaCount: <+env.variables.REPLICA_COUNT>
 
 labels:
-  # owner: <+serviceVariables.OWNER>
-  owner: <+env.variables.OWNER>
+  owner: <+serviceVariables.OWNER>
 
 image:
   repository: gcr.io/heptio-images/ks-guestbook-demo
